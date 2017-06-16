@@ -56,4 +56,134 @@ class Comment
      * @ORM\JoinColumn(name="speech_id", referencedColumnName="speech_id")
      */
     protected $speech;
+
+    /**
+     * Get commentId
+     *
+     * @return integer
+     */
+    public function getCommentId()
+    {
+        return $this->comment_id;
+    }
+
+    /**
+     * Set comment
+     *
+     * @param string $comment
+     *
+     * @return Comment
+     */
+    public function setComment($comment)
+    {
+        $this->comment = $comment;
+
+        return $this;
+    }
+
+    /**
+     * Get comment
+     *
+     * @return string
+     */
+    public function getComment()
+    {
+        return $this->comment;
+    }
+
+    /**
+     * Set createdAt
+     *
+     * @param \DateTime $createdAt
+     *
+     * @return Comment
+     */
+    public function setCreatedAt($createdAt)
+    {
+        $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    /**
+     * Get createdAt
+     *
+     * @return \DateTime
+     */
+    public function getCreatedAt()
+    {
+        return $this->createdAt;
+    }
+
+    /**
+     * Set modifiedAt
+     *
+     * @param \DateTime $modifiedAt
+     *
+     * @return Comment
+     */
+    public function setModifiedAt($modifiedAt)
+    {
+        $this->modifiedAt = $modifiedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get modifiedAt
+     *
+     * @return \DateTime
+     */
+    public function getModifiedAt()
+    {
+        return $this->modifiedAt;
+    }
+
+    /**
+     * Set commentator
+     *
+     * @param \AppBundle\Entity\ApiUser $commentator
+     *
+     * @return Comment
+     */
+    public function setCommentator(\AppBundle\Entity\ApiUser $commentator = null)
+    {
+        $this->commentator = $commentator;
+
+        return $this;
+    }
+
+    /**
+     * Get commentator
+     *
+     * @return \AppBundle\Entity\ApiUser
+     */
+    public function getCommentator()
+    {
+        return $this->commentator;
+    }
+
+    /**
+     * Set speech
+     *
+     * @param \AppBundle\Entity\Speech $speech
+     *
+     * @return Comment
+     */
+    public function setSpeech(\AppBundle\Entity\Speech $speech = null)
+    {
+        $this->speech = $speech;
+
+        return $this;
+    }
+
+    /**
+     * Get speech
+     *
+     * @return \AppBundle\Entity\Speech
+     */
+    public function getSpeech()
+    {
+        return $this->speech;
+    }
 }
