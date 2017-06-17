@@ -63,6 +63,16 @@ class ApiUser extends BaseUser
      */
     protected $writtenSpeeches;
 
+    public function __construct() {
+
+        parent::__construct();
+        $date = new \DateTime();
+        $this->comments     = new ArrayCollection();
+        $this->writtenSpeeches     = new ArrayCollection();
+        $this->createdAt = $date;
+        $this->modifiedAt = $date;
+    }
+
     /**
      * Get userId
      *
