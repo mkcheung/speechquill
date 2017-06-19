@@ -100,3 +100,17 @@ fos_user:
     registration:
         form:
             type: AppBundle\Forms\Users\RegistrationFormType#app/config/config.yml
+
+knp_gaufrette:
+    adapters:
+        local_uploads:
+            local:
+                directory: %kernel.root_dir%/../web/uploads
+    filesystems:
+        uploads:
+            adapter: local_uploads
+
+srio_rest_upload:
+    storages:
+        default:
+            filesystem: gaufrette.uploads_filesystem

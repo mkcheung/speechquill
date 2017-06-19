@@ -4,6 +4,11 @@ services:
         factory: ['@doctrine.orm.entity_manager', getRepository]
         arguments:
             - AppBundle\Entity\Speech
+    repository.video:
+        class: Doctrine\Orm\EntityRepository
+        factory: ['@doctrine.orm.entity_manager', getRepository]
+        arguments:
+            - AppBundle\Entity\Video
     repository.user:
         class: Doctrine\Orm\EntityRepository
         factory: ['@doctrine.orm.entity_manager', getRepository]
@@ -17,6 +22,9 @@ services:
     app.speech_service:
         class: AppBundle\Service\SpeechService
         arguments: ['@doctrine.orm.entity_manager', "@repository.user"]
+    app.video_service:
+        class: AppBundle\Service\VideoService
+        arguments: ['@doctrine.orm.entity_manager', "@repository.speech", "@repository.video", '%kernel.root_dir%/../web/uploads']
     app.user_service:
         class: AppBundle\Service\ApiUserService
         arguments: ['@doctrine.orm.entity_manager', "@repository.user"]
