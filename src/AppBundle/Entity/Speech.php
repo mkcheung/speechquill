@@ -53,16 +53,24 @@ class Speech
 
 
     /**
+     * @ORM\OneToOne(targetEntity="Video", mappedBy="speech")
+     */
+    protected $video;
+
+    /**
      * @var ArrayCollection
      * @ORM\OneToMany(targetEntity="Comment", mappedBy="speech")
      */
     protected $speechComments;
+
     /**
      * Constructor
      */
     public function __construct()
     {
         $this->speechComments = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->createdAt = new \DateTime();
+        $this->modifiedAt = new \DateTime();
     }
 
     /**

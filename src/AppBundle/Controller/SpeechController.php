@@ -65,7 +65,8 @@ class SpeechController extends Controller
             throw $this->createNotFoundException('Could not create/send message.');
         }
 
-        return json_encode($response);
+        $response = new JsonResponse($response, 200);
+        return $response;
     }
 
 }

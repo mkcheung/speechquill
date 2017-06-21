@@ -38,12 +38,20 @@ class SpeechService
 
         $speech = new Speech();
 
-        $speechWriter = $this->userRepo->findBy(['user_id' => $speechData['user_id']]);
+        $speechWriter = $this->userRepo->findOneBy(['user_id' => $speechData['user_id']]);
 
         $speech->setSpeechWriter($speechWriter);
+        $speech->setSpeech($speechData['speech']);
 
         $this->em->persist($speech);
         $this->em->flush();
-        return $speech;
+
+        $data['speech'][] = [
+            'speech_id' => $speech->getSpeechId(),
+            'speechwriter' => $speechWriter->getFirstName().' '.$speechWriter->getLastName(),
+            'speech' => $speech->getSpeech(),
+            'created_at' => $speech->getCreatedAt()
+        ];
+        return $data;
     }
 }

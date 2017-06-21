@@ -21,10 +21,6 @@ video_index:
     path: /videos/
     defaults: { _controller: AppBundle:Video:index}
     methods: [GET]
-video_create:
-    path: /videos/create
-    defaults: { _controller: AppBundle:Video:create}
-    methods: [POST]
 video_upload:
     path: /videos/upload
     defaults: { _controller: AppBundle:Video:upload}

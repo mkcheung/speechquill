@@ -58,6 +58,15 @@ class Comment
     protected $speech;
 
     /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->createdAt = new \DateTime();
+        $this->modifiedAt = new \DateTime();
+    }
+
+    /**
      * Get commentId
      *
      * @return integer

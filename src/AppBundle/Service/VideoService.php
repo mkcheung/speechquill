@@ -39,10 +39,6 @@ class VideoService
         $this->targetDir = $targetDir;
     }
 
-//    public function __construct($targetDir)
-//    {
-//
-//    }
 
     public function upload(UploadedFile $file)
     {
@@ -63,21 +59,37 @@ class VideoService
         return $this->videoRepo->findAll();
     }
 
-    public function createVideo(Request $request,$directory)
+    public function uploadVideo(Request $request,$directory)
     {
-//var_dump(ini_get("upload_max_filesize"));die;
-//        var_dump($request);die;
+//        $speechData = json_decode($request->getContent(), true);
+        $parameters = json_decode($request->request->get('request'));
+        $speechAssociatedWithVideo = $this->speechRepo->findOneBy(['speech_id' => $parameters->speech_id]);
+
         $file = $request->files->get('file');
-        $res = $file->move($directory,'video.'.$file->getClientOriginalExtension());
-//        var_dump($file);die;
-//        $videoData = json_decode($request->getContent(), true);
-//var_dump($videoData);die;
-//        $video = new Video();
-//
-//        $video->setName($videoData['username']);
-//        $this->em->persist($video);
-//        $this->em->flush();
-//        return $video;
+        $renamedFile = md5(uniqid()).'.'.$file->getClientOriginalExtension();
+        $video = new Video();
+
+        $video->setOriginalName($file->getClientOriginalName());
+        $video->setMimeType($file->getClientMimeType());
+        $video->setPathName($directory.$renamedFile);
+        $video->setFileName($renamedFile);
+        $video->setFileSize($file->getSize());
+        $video->setSpeech($speechAssociatedWithVideo);
+
+        $this->em->persist($video);
+        $this->em->flush();
+
+        $result = $file->move($directory,$renamedFile);
+
+        $data['video'][] = [
+            'video_id' => $video->getVideoId(),
+            'fileSize' => $video->getFileSize(),
+            'fileName' => $video->getFileName(),
+            'pathName' => $video->getPathName(),
+            'created_at' => $video->getCreatedAt()
+        ];
+        return $data;
+
     }
 
 }

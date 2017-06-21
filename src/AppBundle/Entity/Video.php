@@ -19,87 +19,180 @@ class Video
 {
     /**
      * @ORM\Id
-     * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\Column(name="video_id", type = "integer")
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @var integer
      */
-    public $id;
+    public $video_id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=false)
      */
-    public $name;
+    public $originalName;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="string", length=50, nullable=false)
      */
-    public $path;
+    public $mimeType;
 
-    private $file;
     /**
-     *
-     * @ORM\Column(type="string")
-     *
+     * @ORM\Column(type="string", length=255, nullable=false)
      */
-    private $snapshot;
+    public $pathName;
 
-    public function getSnapshot()
+    /**
+     * @ORM\Column(type="string", length=255, nullable=false)
+     */
+    public $fileName;
+
+    /**
+     * @ORM\Column(type="bigint", nullable=false)
+     */
+    public $fileSize;
+
+    /**
+     * @ORM\OneToOne(targetEntity="Speech", inversedBy="video")
+     * @ORM\JoinColumn(name="speech_id", referencedColumnName="speech_id")
+     */
+    protected $speech;
+
+    /**
+     * @var \DateTime
+     * @ORM\Column(name="createdAt", type="datetime", nullable=false)
+     */
+    protected $createdAt;
+
+    /**
+     * @var \DateTime
+     * @ORM\Column(name="modifiedAt", type="datetime", nullable=false)
+     */
+    protected $modifiedAt;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
     {
-        return $this->snapshot;
+        $this->createdAt = new \DateTime();
+        $this->modifiedAt = new \DateTime();
     }
 
-    public function setBrochure($snapshot)
+    /**
+     * Get videoId
+     *
+     * @return integer
+     */
+    public function getVideoId()
     {
-        $this->snapshot = $snapshot;
+        return $this->video_id;
+    }
+
+    public function getOriginalName()
+    {
+        return  $this->originalName;
+    }
+
+    public function setOriginalName($originalName)
+    {
+        $this->originalName = $originalName;
+    }
+
+    public function getMimeType()
+    {
+        return  $this->mimeType;
+    }
+
+    public function setMimeType($mimeType)
+    {
+        $this->mimeType = $mimeType;
+    }
+
+    public function getFileName()
+    {
+        return  $this->fileName;
+    }
+
+    public function setFileName($fileName)
+    {
+        $this->fileName = $fileName;
+    }
+
+    public function getFileSize()
+    {
+        return  $this->fileSize;
+    }
+
+    public function setFileSize($fileSize)
+    {
+        $this->fileSize = $fileSize;
+    }
+
+    public function getPathName()
+    {
+        return $this->pathName;
+    }
+
+    public function setPathName($pathName)
+    {
+        $this->pathName = $pathName;
+    }
+
+    public function getSpeech()
+    {
+        return $this->speech;
+    }
+
+    public function setSpeech($speech)
+    {
+        $this->speech = $speech;
+    }
+
+    /**
+     * Set createdAt
+     *
+     * @param \DateTime $createdAt
+     *
+     * @return Video
+     */
+    public function setCreatedAt($createdAt)
+    {
+        $this->createdAt = $createdAt;
 
         return $this;
     }
 
-
-    public function getAbsolutePath()
+    /**
+     * Get createdAt
+     *
+     * @return \DateTime
+     */
+    public function getCreatedAt()
     {
-        return null === $this->path
-            ? null
-            : $this->getUploadRootDir().'/'.$this->path;
-    }
-
-    public function getWebPath()
-    {
-        return null === $this->path
-            ? null
-            : $this->getUploadDir().'/'.$this->path;
-    }
-
-    protected function getUploadRootDir()
-    {
-        // the absolute directory path where uploaded
-        // documents should be saved
-        return __DIR__.'/../../../../web/'.$this->getUploadDir();
-    }
-
-    protected function getUploadDir()
-    {
-        // get rid of the __DIR__ so it doesn't screw up
-        // when displaying uploaded doc/image in the view.
-        return 'uploads/documents';
+        return $this->createdAt;
     }
 
     /**
-     * Sets file.
+     * Set modifiedAt
      *
-     * @param UploadedFile $file
+     * @param \DateTime $modifiedAt
+     *
+     * @return Video
      */
-    public function setFile(UploadedFile $file = null)
+    public function setModifiedAt($modifiedAt)
     {
-        $this->file = $file;
+        $this->modifiedAt = $modifiedAt;
+
+        return $this;
     }
 
     /**
-     * Get file.
+     * Get modifiedAt
      *
-     * @return UploadedFile
+     * @return \DateTime
      */
-    public function getFile()
+    public function getModifiedAt()
     {
-        return $this->file;
+        return $this->modifiedAt;
     }
+
 }
