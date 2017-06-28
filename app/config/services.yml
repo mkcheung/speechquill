@@ -21,7 +21,7 @@ services:
             - AppBundle\Entity\Comment
     app.speech_service:
         class: AppBundle\Service\SpeechService
-        arguments: ['@doctrine.orm.entity_manager', "@repository.user"]
+        arguments: ['@doctrine.orm.entity_manager', "@repository.user", "@repository.speech", "@repository.video"]
     app.video_service:
         class: AppBundle\Service\VideoService
         arguments: ['@doctrine.orm.entity_manager', "@repository.speech", "@repository.video", '%kernel.root_dir%/../web/uploads']

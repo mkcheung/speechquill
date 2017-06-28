@@ -22,6 +22,25 @@ class VideoController extends Controller
 
     public function indexAction()
     {
+        $videoServices = $this->get('app.video_service');
+        $messages = $videoServices->getMessages();
+
+        if(empty($messages)){
+            throw $this->createNotFoundException('No messages available');
+        }
+
+
+        foreach($messages as $message){
+            $data['messages'][] = [
+                'message' => $message->getMessage(),
+                'createdAt' => $message->getCreatedAt(),
+                'modifiedAt' => $message->getModifiedAt()
+            ];
+        }
+
+        $response = new JsonResponse($data, 200);
+
+        return $response;
     }
 
     public function uploadAction(Request $request)

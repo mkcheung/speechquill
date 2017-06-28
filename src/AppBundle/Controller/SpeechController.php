@@ -30,15 +30,7 @@ class SpeechController extends Controller
         }
 
 
-        foreach($speeches as $speech){
-            $data['speeches'][] = [
-                'speech' => $speech->getSpeech(),
-                'createdAt' => $speech->getCreatedAt(),
-                'modifiedAt' => $speech->getModifiedAt()
-            ];
-        }
-
-        $response = new JsonResponse($data, 200);
+        $response = new JsonResponse($speeches, 200);
 
         return $response;
     }
