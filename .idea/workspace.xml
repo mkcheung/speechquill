@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="cc58902e-f439-4dc6-baac-38f62723dbd3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/SpeechController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/SpeechController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/VideoController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/VideoController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Service/SpeechService.php" afterPath="$PROJECT_DIR$/src/AppBundle/Service/SpeechService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Service/VideoService.php" afterPath="$PROJECT_DIR$/src/AppBundle/Service/VideoService.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,14 +31,14 @@
     <favorites_list name="speechQuill" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4802896">
+    <splitter split-orientation="horizontal" split-proportion="0.3446712">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="VideoController.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="VideoController.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/VideoController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="600">
-                  <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+                <state relative-caret-position="480">
+                  <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
                   <folding>
                     <element signature="e#126#185#0#PHP" expanded="true" />
                   </folding>
@@ -44,34 +46,32 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SpeechController.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/SpeechController.php">
+          <file leaf-file-name="ParameterBag.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/ParameterBag.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+                <state relative-caret-position="1245">
+                  <caret line="90" column="20" lean-forward="false" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Speech.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Speech.php">
+          <file leaf-file-name="services.yml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/config/services.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+                <state relative-caret-position="436">
+                  <caret line="40" column="63" lean-forward="false" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Video.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Video.php">
+          <file leaf-file-name="CloudinaryWrapper.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/vendor/misteio/cloudinary-bundle/Wrapper/CloudinaryWrapper.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="443">
-                  <caret line="129" column="31" lean-forward="false" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="31" />
-                  <folding>
-                    <element signature="e#122#154#0#PHP" expanded="true" />
-                  </folding>
+                <state relative-caret-position="200">
+                  <caret line="119" column="20" lean-forward="false" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -79,8 +79,18 @@
           <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+                <state relative-caret-position="97">
+                  <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
                   <folding />
                 </state>
               </provider>
@@ -90,11 +100,21 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="SpeechService.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="SpeechService.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/SpeechService.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="516">
-                  <caret line="63" column="30" lean-forward="false" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="30" />
+                <state relative-caret-position="-254">
+                  <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="301">
+                  <caret line="112" column="39" lean-forward="false" selection-start-line="112" selection-start-column="14" selection-end-line="112" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
@@ -103,7 +123,7 @@
           <file leaf-file-name="ApiUserController.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ApiUserController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="70">
+                <state relative-caret-position="-142">
                   <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
                   <folding>
                     <element signature="e#6#91#0#PHP" expanded="true" />
@@ -113,11 +133,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="VideoService.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="VideoService.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/VideoService.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="795">
-                  <caret line="65" column="105" lean-forward="false" selection-start-line="65" selection-start-column="105" selection-end-line="65" selection-end-column="105" />
+                <state relative-caret-position="440">
+                  <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
                   <folding>
                     <element signature="e#123#150#0#PHP" expanded="true" />
                   </folding>
@@ -128,18 +148,8 @@
           <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/routing.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="63">
+                <state relative-caret-position="90">
                   <caret line="6" column="52" lean-forward="false" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="services.yml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="23" column="94" lean-forward="false" selection-start-line="23" selection-start-column="94" selection-end-line="23" selection-end-column="94" />
                   <folding />
                 </state>
               </provider>
@@ -157,6 +167,7 @@
       <find>load</find>
       <find>construct</find>
       <find>nelmio</find>
+      <find>getPath</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,7 +180,6 @@
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/CommentService.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/CommentController.php" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/ApiUserController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/TokenController.php" />
@@ -183,20 +193,22 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/ApiUser.php" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/DoctrineMigrations/Version20170621025856.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Speech.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Comment.php" />
         <option value="$PROJECT_DIR$/app/DoctrineMigrations/Version20170621031328.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/DoctrineMigrations/Version20170621032948.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Service/VideoService.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Video.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/VideoController.php" />
-        <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/SpeechController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/SpeechService.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/vendor/misteio/cloudinary-bundle/Wrapper/CloudinaryWrapper.php" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/VideoController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Service/VideoService.php" />
       </list>
     </option>
   </component>
@@ -208,10 +220,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="9" />
-    <option name="y" value="42" />
-    <option name="width" value="1594" />
-    <option name="height" value="951" />
+    <option name="x" value="147" />
+    <option name="y" value="41" />
+    <option name="width" value="1538" />
+    <option name="height" value="719" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -229,6 +241,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,8 +250,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="speechQuill" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.jetbrains.php.config.library.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -248,50 +261,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="speechQuill" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speechQuill" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speechQuill" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speechQuill" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speechQuill" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -330,14 +299,13 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="SearchEverywhereHistoryKey" value="speech&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Entity/Speech.php&#10;services.y&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/services.yml&#10;routing&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Resources/config/routing.yml&#10;config&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/config.yml&#10;para&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/parameters.yml&#10;AppKer&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/AppKernel.php&#10;Parameter&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/ParameterBag.php&#10;CommentSer&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Service/CommentService.php&#10;Speec&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Service/SpeechService.php&#10;SpeechController&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Controller/SpeechController.php&#10;SpeechService&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Service/SpeechService.php&#10;composer&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/composer.json&#10;Speech&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Entity/Speech.php&#10;serv&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/services.yml&#10;FormDataUpl&#9;null&#9;null&#10;config.yml&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/config.yml&#10;config.y&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/config.yml&#10;composer.j&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/composer.json&#10;AppKerne&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/AppKernel.php&#10;AppKe&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/AppKernel.php&#10;AppBu&#9;null&#9;null&#10;secu&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/security.yml&#10;ApiUser&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Service/ApiUserService.php&#10;OpenSSLK&#9;null&#9;null&#10;DefaultJWS&#9;null&#9;null&#10;LoadedJWS&#9;null&#9;null&#10;DefaultEn&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/vendor/lexik/jwt-authentication-bundle/Encoder/DefaultEncoder.php&#10;AuthenticationManagerInter&#9;null&#9;null&#10;DefaultEnco&#9;null&#9;null&#10;JWTProv&#9;null&#9;null&#10;servic&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/services.yml&#10;JWT&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Security/JwtTokenAuthenticator.php&#10;parameter.yml.d&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/parameters.yml.dist&#10;Comment&#9;null&#9;null&#10;security.ym&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/security.yml&#10;routing.y&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/routing.yml&#10;services&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/services.yml&#10;parameters.ym&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/parameters.yml&#10;services.yml&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/services.yml" />
+    <property name="SearchEverywhereHistoryKey" value="Param&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/ParameterBag.php&#10;FileBag&#9;null&#9;null&#10;para&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/parameters.yml&#10;AppKe&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/AppKernel.php&#10;serv&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/services.yml&#10;config&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/config.yml&#10;appkernel&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/AppKernel.php&#10;speech&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Entity/Speech.php&#10;services.y&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/services.yml&#10;routing&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Resources/config/routing.yml&#10;AppKer&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/AppKernel.php&#10;Parameter&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/ParameterBag.php&#10;CommentSer&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Service/CommentService.php&#10;Speec&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Service/SpeechService.php&#10;SpeechController&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Controller/SpeechController.php&#10;SpeechService&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Service/SpeechService.php&#10;composer&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/composer.json&#10;Speech&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Entity/Speech.php&#10;FormDataUpl&#9;null&#9;null&#10;config.yml&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/config.yml&#10;config.y&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/config.yml&#10;composer.j&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/composer.json&#10;AppKerne&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/AppKernel.php&#10;AppBu&#9;null&#9;null&#10;secu&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/security.yml&#10;ApiUser&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Service/ApiUserService.php&#10;OpenSSLK&#9;null&#9;null&#10;DefaultJWS&#9;null&#9;null&#10;LoadedJWS&#9;null&#9;null&#10;DefaultEn&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/vendor/lexik/jwt-authentication-bundle/Encoder/DefaultEncoder.php&#10;AuthenticationManagerInter&#9;null&#9;null&#10;DefaultEnco&#9;null&#9;null&#10;JWTProv&#9;null&#9;null&#10;servic&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/services.yml&#10;JWT&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/src/AppBundle/Security/JwtTokenAuthenticator.php&#10;parameter.yml.d&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/parameters.yml.dist&#10;Comment&#9;null&#9;null&#10;security.ym&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/security.yml&#10;routing.y&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/routing.yml&#10;services&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/services.yml&#10;parameters.ym&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/parameters.yml&#10;services.yml&#9;FILE&#9;file:///Users/marscheung/SideProjects/speechQuill/app/config/services.yml" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -434,12 +402,13 @@
       <option name="presentableId" value="Default" />
       <updated>1497586550987</updated>
       <workItem from="1497586553304" duration="44398000" />
-      <workItem from="1498107300045" duration="12326000" />
+      <workItem from="1498107300045" duration="12830000" />
+      <workItem from="1498893621129" duration="6322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56724000" />
+    <option name="totallyTimeSpent" value="63550000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -451,19 +420,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="42" width="1594" height="951" extended-state="0" />
+    <frame x="147" y="41" width="1538" height="719" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17126726" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13979194" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -485,33 +454,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="185" column="3" lean-forward="false" selection-start-line="185" selection-start-column="3" selection-end-line="185" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CommentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="false" />
-            <element signature="e#128#176#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -581,9 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding>
-            <element signature="e#89#158#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -760,22 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="94" column="11" lean-forward="false" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/ParameterBag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1240">
-          <caret line="90" column="20" lean-forward="false" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20170621032948.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -798,40 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/VideoService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="65" column="105" lean-forward="false" selection-start-line="65" selection-start-column="105" selection-end-line="65" selection-end-column="105" />
-          <folding>
-            <element signature="e#123#150#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ApiUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -840,35 +729,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/VideoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-          <folding>
-            <element signature="e#126#185#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
+        <state relative-caret-position="90">
           <caret line="6" column="52" lean-forward="false" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Speech.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="94" lean-forward="false" selection-start-line="23" selection-start-column="94" selection-end-line="23" selection-end-column="94" />
+        <state relative-caret-position="1305">
+          <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1845">
+          <caret line="129" column="31" lean-forward="false" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="31" />
+          <folding>
+            <element signature="e#122#154#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/SpeechService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-254">
+          <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ApiUserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
+        <state relative-caret-position="-142">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#6#91#0#PHP" expanded="true" />
@@ -877,37 +774,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Speech.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="129" column="31" lean-forward="false" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="31" />
-          <folding>
-            <element signature="e#122#154#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/SpeechController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="-164">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/SpeechService.php">
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="63" column="30" lean-forward="false" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="30" />
+        <state relative-caret-position="240">
+          <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="112" column="39" lean-forward="false" selection-start-line="112" selection-start-column="14" selection-end-line="112" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/misteio/cloudinary-bundle/MisteioCloudinaryBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="40" column="63" lean-forward="false" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/misteio/cloudinary-bundle/Wrapper/CloudinaryWrapper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="119" column="20" lean-forward="false" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="1093" column="34" lean-forward="true" selection-start-line="1093" selection-start-column="34" selection-end-line="1093" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/ParameterBag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="90" column="20" lean-forward="false" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/FileBag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/VideoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#126#185#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/VideoService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding>
+            <element signature="e#123#150#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

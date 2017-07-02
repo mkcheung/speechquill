@@ -25,6 +25,7 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "knplabs/knp-gaufrette-bundle": "^0.4.0",
         "lexik/jwt-authentication-bundle": "^2.4",
+        "misteio/cloudinary-bundle": "^0.2.0",
         "nelmio/cors-bundle": "^1.5",
         "sensio/distribution-bundle": "~4.0",
         "sensio/framework-extra-bundle": "^3.0.2",

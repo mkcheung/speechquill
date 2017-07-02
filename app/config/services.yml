@@ -24,7 +24,7 @@ services:
         arguments: ['@doctrine.orm.entity_manager', "@repository.user", "@repository.speech", "@repository.video"]
     app.video_service:
         class: AppBundle\Service\VideoService
-        arguments: ['@doctrine.orm.entity_manager', "@repository.speech", "@repository.video", '%kernel.root_dir%/../web/uploads']
+        arguments: ['@doctrine.orm.entity_manager', "@repository.speech", "@repository.video", "@app.cloudinator_wrapper", '%kernel.root_dir%/../web/uploads']
     app.user_service:
         class: AppBundle\Service\ApiUserService
         arguments: ['@doctrine.orm.entity_manager', "@repository.user"]
@@ -36,6 +36,11 @@ services:
         class: AppBundle\Forms\Users\RegistrationFormType
         tags:
             - { name: form.type }
+
+    app.cloudinator_wrapper:
+      class: Misteio\CloudinaryBundle\Wrapper\CloudinaryWrapper
+      arguments: ["%cloudinary_cloud_name%", "%cloudinary_api_key%", "%cloudinary_secret_key%"]
+
     jwt_token_authenticator:
         class: AppBundle\Security\JwtTokenAuthenticator
         autowire: true

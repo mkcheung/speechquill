@@ -107,6 +107,11 @@ fos_user:
         form:
             type: AppBundle\Forms\Users\RegistrationFormType#app/config/config.yml
 
+misteio_cloudinary:
+  cloud_name: "%cloudinary_cloud_name%"
+  api_key: "%cloudinary_api_key%"
+  secret_key: "%cloudinary_secret_key%"
+
 knp_gaufrette:
     adapters:
         local_uploads:

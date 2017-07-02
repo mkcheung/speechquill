@@ -16,6 +16,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Misteio\CloudinaryBundle\Wrapper\CloudinaryWrapper as CloudinaryWrapper;
 
 
 class VideoService
@@ -25,17 +26,21 @@ class VideoService
 
     protected $em;
     protected $speechRepo;
+    protected $videoRepo;
+    protected $cloudinary;
 
     public function __construct(
         EntityManager $entityManager,
         EntityRepository $speechRepository,
         EntityRepository $videoRepository,
+        CloudinaryWrapper $cloudinary,
         $targetDir
     )
     {
         $this->em = $entityManager;
         $this->speechRepo = $speechRepository;
         $this->videoRepo = $videoRepository;
+        $this->cloudinary = $cloudinary;
         $this->targetDir = $targetDir;
     }
 
@@ -61,7 +66,7 @@ class VideoService
 
     public function uploadVideo(Request $request,$directory)
     {
-//        $speechData = json_decode($request->getContent(), true);
+        $speechData = json_decode($request->getContent(), true);
         $parameters = json_decode($request->request->get('request'));
         $speechAssociatedWithVideo = $this->speechRepo->findOneBy(['speech_id' => $parameters->speech_id]);
 
@@ -80,6 +85,7 @@ class VideoService
         $this->em->flush();
 
         $result = $file->move($directory,$renamedFile);
+        $test = $this->cloudinary->uploadVideo($directory.'/'.$renamedFile, 'name', []);
 
         $data['video'][] = [
             'video_id' => $video->getVideoId(),

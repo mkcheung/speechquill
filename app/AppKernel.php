@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new Knp\Bundle\GaufretteBundle\KnpGaufretteBundle(),
             new SRIO\RestUploadBundle\SRIORestUploadBundle(),
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
+            new Misteio\CloudinaryBundle\MisteioCloudinaryBundle(),
             new AppBundle\AppBundle(),
         );
 
