@@ -46,6 +46,11 @@ class Video
     public $fileName;
 
     /**
+     * @ORM\Column(type="string", length=255, nullable=false)
+     */
+    protected $fileUrl;
+
+    /**
      * @ORM\Column(type="bigint", nullable=false)
      */
     public $fileSize;
@@ -125,6 +130,16 @@ class Video
     public function setFileSize($fileSize)
     {
         $this->fileSize = $fileSize;
+    }
+
+    public function getFileUrl()
+    {
+        return  $this->fileUrl;
+    }
+
+    public function setFileUrl($fileUrl)
+    {
+        $this->fileUrl = $fileUrl;
     }
 
     public function getPathName()

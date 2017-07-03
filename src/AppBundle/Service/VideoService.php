@@ -81,17 +81,20 @@ class VideoService
         $video->setFileSize($file->getSize());
         $video->setSpeech($speechAssociatedWithVideo);
 
+        $result = $file->move($directory,$renamedFile);
+        $cloudinaryReturned = $this->cloudinary->uploadVideo($directory.'/'.$renamedFile, $renamedFile, []);
+        $cloudinaryResult = $cloudinaryReturned->getResult();
+        $video->setFileUrl($cloudinaryResult['url']);
+
         $this->em->persist($video);
         $this->em->flush();
-
-        $result = $file->move($directory,$renamedFile);
-        $test = $this->cloudinary->uploadVideo($directory.'/'.$renamedFile, 'name', []);
 
         $data['video'][] = [
             'video_id' => $video->getVideoId(),
             'fileSize' => $video->getFileSize(),
             'fileName' => $video->getFileName(),
             'pathName' => $video->getPathName(),
+            'fileUrl'  => $video->getFileUrl(),
             'created_at' => $video->getCreatedAt()
         ];
         return $data;

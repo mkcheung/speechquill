@@ -61,7 +61,8 @@ class SpeechService
             if(!empty($speechAndVideo['speeches'][$videoSpeechId])){
 
                 $videoData = [
-                    'videoPath' => $video->getPathName()
+                    'videoPath' => $video->getPathName(),
+                    'videoUrl' => $video->getFileUrl()
                 ];
 
                 $speechAndVideo['speeches'][$videoSpeechId] = array_merge($speechAndVideo['speeches'][$videoSpeechId], $videoData);
